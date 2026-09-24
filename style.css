@@ -1,0 +1,313 @@
+/* ============ CORES E FONTES ============
+   Para mudar o visual do site inteiro, altere só estes valores. */
+:root {
+  --fundo: #000000;          /* preto da logo */
+  --cartao: #121212;         /* fundo dos cartões */
+  --texto: #f5f5f2;
+  --texto-suave: #b5b5ae;
+  --amarelo: #ffd801;        /* amarelo da logo */
+  --borda: #2b2b2b;
+
+  --fonte-titulo: "Bricolage Grotesque", "Segoe UI", Arial, sans-serif;
+  --fonte-texto: "DM Sans", "Segoe UI", Arial, sans-serif;
+}
+
+/* ============ BASE ============ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* evita que o menu fixo cubra os títulos */
+}
+
+body {
+  font-family: var(--fonte-texto);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--texto);
+  background: var(--fundo);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  color: var(--amarelo);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--amarelo);
+  outline-offset: 3px;
+}
+
+h1, h2, h3 {
+  font-family: var(--fonte-titulo);
+  line-height: 1.15;
+}
+
+/* ============ CABEÇALHO ============ */
+.topo {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  padding: 0.9rem 5vw;
+  background: var(--fundo);
+  border-bottom: 1px solid var(--borda);
+}
+
+.marca {
+  display: block;
+  height: 64px;
+}
+
+.marca img {
+  width: auto;
+  height: 100%;
+}
+
+.topo nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.topo nav a {
+  color: var(--texto);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.topo nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--amarelo);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+}
+
+/* ============ BOTÕES ============ */
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.85rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid var(--amarelo);
+  transition: background 0.15s, color 0.15s;
+}
+
+.btn-principal {
+  background: var(--amarelo);
+  color: #000;
+}
+
+.btn-principal:hover {
+  background: var(--texto);
+  border-color: var(--texto);
+}
+
+.btn-secundario {
+  background: transparent;
+  color: var(--amarelo);
+}
+
+.btn-secundario:hover {
+  background: var(--amarelo);
+  color: #000;
+}
+
+/* ============ APRESENTAÇÃO ============ */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 4rem 5vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 800;
+}
+
+.hero-texto p {
+  margin-top: 1rem;
+  max-width: 34ch;
+  color: var(--texto-suave);
+  font-size: 1.15rem;
+}
+
+.hero-imagem {
+  aspect-ratio: 4 / 3;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--borda); /* aparece enquanto a foto não existe */
+}
+
+/* ============ SEÇÕES ============ */
+.secao {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3.5rem 5vw;
+}
+
+.secao h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  margin-bottom: 1.75rem;
+}
+
+/* ============ GALERIA ============ */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.galeria figure {
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--borda);
+}
+
+/* ============ LOCALIZAÇÃO ============ */
+.lojas {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.loja {
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--borda);
+}
+
+.loja:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.loja-nome {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.local-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.local-info h4 {
+  font-family: var(--fonte-titulo);
+  font-size: 1.05rem;
+  margin: 1.25rem 0 0.35rem;
+}
+
+.local-info h4:first-child {
+  margin-top: 0;
+}
+
+.botoes-loja {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.local-info .btn {
+  margin-top: 1.5rem;
+}
+
+.mapa {
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--borda);
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ============ CONTATO ============ */
+.contatos {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.contatos li {
+  background: var(--cartao);
+  border: 1px solid var(--borda);
+  border-left: 5px solid var(--amarelo);
+  border-radius: 8px;
+  padding: 1.1rem 1.25rem;
+}
+
+.rotulo {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+}
+
+.contatos a {
+  font-weight: 700;
+  word-break: break-word;
+}
+
+/* ============ RODAPÉ ============ */
+.rodape {
+  margin-top: 2rem;
+  padding: 1.5rem 5vw;
+  background: var(--cartao);
+  border-top: 1px solid var(--borda);
+  color: var(--texto-suave);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* ============ CELULAR ============ */
+@media (max-width: 800px) {
+  .hero,
+  .local-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 2.5rem;
+    gap: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
