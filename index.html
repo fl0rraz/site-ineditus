@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ineditus |</title>
-  <meta name="description" content="Conheça a Ineditus: endereço, horários, fotos e contato.">
+  <title>Ineditus | Películas, PPF, Estética e Envelopamento Automotivo</title>
+  <meta name="description" content="Ineditus: películas, PPF, estética automotiva, envelopamento e LED. Duas lojas em São Paulo. Confira endereços, horários e fale no WhatsApp.">
 
   <!-- Fontes do Google (precisa de internet; se falhar, usa fontes do sistema) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +22,7 @@
       <img src="imagens/logo-ineditus.jpg" alt="Ineditus">
     </a>
     <nav aria-label="Menu principal">
+      <a href="#servicos">Serviços</a>
       <a href="#fotos">Fotos</a>
       <a href="#local">Onde estamos</a>
       <a href="#contato">Contato</a>
@@ -33,13 +34,13 @@
     <!-- ============ APRESENTAÇÃO ============ -->
     <section class="hero">
       <div class="hero-texto">
-        <h1>Há mais de 25 anos no mercado!</h1>
-        <p>Conheça todos os benefícios e qualidade das películas que trabalhamos!</p>
+        <h1>Som, multimídia e estética automotiva</h1>
+        <p class="servicos">Multimídia · Som · Insulfilm residencial · Películas · PPF · Envelopamento · LED</p>
         <div class="botoes">
           <!-- Troque 5511999999999 pelo número com DDI + DDD (Brasil = 55) -->
-          <a class="btn btn-principal" href="https://wa.me/5511933243199" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          <a class="btn btn-principal" href="https://wa.me/5511999999999" target="_blank" rel="noopener">Chamar no WhatsApp</a>
           <!-- Troque ineditus pelo @ do Instagram, sem o @ -->
-          <a class="btn btn-secundario" href="https://www.instagram.com/ineditus.film/" target="_blank" rel="noopener">Ver o Instagram</a>
+          <a class="btn btn-secundario" href="https://www.instagram.com/ineditus" target="_blank" rel="noopener">Ver o Instagram</a>
         </div>
       </div>
       <figure class="hero-imagem">
@@ -60,30 +61,108 @@
       </div>
     </section>
 
+    <!-- ============ SERVIÇOS ============ -->
+    <section class="secao" id="servicos">
+      <h2>Nossos serviços</h2>
+      <div class="servicos-grid">
+
+        <article class="servico-card">
+          <h3>Películas automotivas</h3>
+          <p>Controle de calor, luminosidade e privacidade para o seu carro, com aplicação profissional.</p>
+          <a class="link-saiba-mais" href="servicos/peliculas-automotivas.html">Saiba mais →</a>
+        </article>
+
+        <article class="servico-card">
+          <h3>PPF (proteção de pintura)</h3>
+          <p>Película de PPF transparente que protege a pintura contra riscos, brita e desgaste do dia a dia.</p>
+          <a class="link-saiba-mais" href="servicos/ppf.html">Saiba mais →</a>
+        </article>
+
+        <article class="servico-card">
+          <h3>Películas residenciais</h3>
+          <p>Controle de calor e privacidade também para casas, apartamentos e escritórios.</p>
+          <a class="link-saiba-mais" href="servicos/peliculas-residenciais.html">Saiba mais →</a>
+        </article>
+
+        <article class="servico-card">
+          <h3>Estética automotiva</h3>
+          <p>Envelopamento, LED, som e multimídia, higienização e demais cuidados para deixar o carro em dia.</p>
+          <a class="link-saiba-mais" href="servicos/estetica-automotiva.html">Saiba mais →</a>
+        </article>
+
+      </div>
+    </section>
+
     <!-- ============ LOCALIZAÇÃO ============ -->
     <section class="secao" id="local">
       <h2>Onde estamos</h2>
-      <div class="local-grid">
-        <div class="local-info">
-          <h3>Endereço</h3>
-          <p>Rua Mal.Deodoro da Fonseca, 282<br>Centro, Jundiaí - SP<br>CEP 13201-002</p>
 
-          <h3>Horário de funcionamento</h3>
-          <p>Segunda a sexta: 9h às 18h<br>Sábado: 9h às 14h<br>Domingo: fechado</p>
+      <div class="lojas">
 
-          <!-- Troque o link pelo da sua loja no Google Maps (botão "Compartilhar") -->
-          <a class="btn btn-principal" href="https://maps.app.goo.gl/nDvRAY823afvxnf3A" target="_blank" rel="noopener">Abrir no Google Maps</a>
-        </div>
+        <!-- ---- LOJA 1 ---- -->
+        <article class="loja">
+          <h3 class="loja-nome">Loja 1 — Nome do bairro/shopping</h3>
+          <p class="loja-servicos">Multimídia · Som · LED · Insulfilm residencial</p>
+          <div class="local-grid">
+            <div class="local-info">
+              <h4>Endereço</h4>
+              <p>Rua Exemplo, 123<br>Bairro, São Paulo - SP<br>CEP 00000-000</p>
 
-        <!-- Mapa: no Google Maps, clique em Compartilhar > Incorporar um mapa e cole o src aqui -->
-        <div class="mapa">
-          <iframe
-            title="Mapa com a localização da loja"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58681.34993072242!2d-46.95564207832032!3d-23.185364899999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf269b6b118b63%3A0x94e98ce1ced6e0d6!2sIn%C3%A9ditus%20Film%20-%20unidade%20centro!5e0!3m2!1spt-BR!2sbr!4v1790288416060!5m2!1spt-BR!2sbr"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen></iframe>
-        </div>
+              <h4>Horário de funcionamento</h4>
+              <p>Segunda a sexta: 9h às 18h<br>Sábado: 9h às 14h<br>Domingo: fechado</p>
+
+              <div class="botoes-loja">
+                <!-- Troque 5511999999999 pelo WhatsApp desta loja, com 55 + DDD + número -->
+                <a class="btn btn-principal" href="https://wa.me/5511999999999" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+                <!-- Troque o link pelo da loja no Google Maps (botão "Compartilhar") -->
+                <a class="btn btn-secundario" href="https://www.google.com/maps/search/?api=1&query=Rua+Exemplo+123+Sao+Paulo" target="_blank" rel="noopener">Abrir no Google Maps</a>
+              </div>
+            </div>
+
+            <!-- Mapa: no Google Maps, clique em Compartilhar > Incorporar um mapa e cole o src aqui -->
+            <div class="mapa">
+              <iframe
+                title="Mapa com a localização da Loja 1"
+                src="https://www.google.com/maps?q=Rua+Exemplo+123+Sao+Paulo&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </article>
+
+        <!-- ---- LOJA 2 ---- -->
+        <article class="loja">
+          <h3 class="loja-nome">Loja 2 — Nome do bairro/shopping</h3>
+          <p class="loja-servicos">Películas · PPF · Estética · Envelopamento · LED</p>
+          <div class="local-grid">
+            <div class="local-info">
+              <h4>Endereço</h4>
+              <p>Avenida Exemplo, 456<br>Bairro, São Paulo - SP<br>CEP 00000-000</p>
+
+              <h4>Horário de funcionamento</h4>
+              <p>Segunda a sexta: 9h às 18h<br>Sábado: 9h às 14h<br>Domingo: fechado</p>
+
+              <div class="botoes-loja">
+                <!-- Troque 5511888888888 pelo WhatsApp desta loja, com 55 + DDD + número -->
+                <a class="btn btn-principal" href="https://wa.me/5511888888888" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+                <!-- Troque o link pelo da loja no Google Maps (botão "Compartilhar") -->
+                <a class="btn btn-secundario" href="https://www.google.com/maps/search/?api=1&query=Avenida+Exemplo+456+Sao+Paulo" target="_blank" rel="noopener">Abrir no Google Maps</a>
+              </div>
+            </div>
+
+            <!-- Mapa: no Google Maps, clique em Compartilhar > Incorporar um mapa e cole o src aqui -->
+            <div class="mapa">
+              <iframe
+                title="Mapa com a localização da Loja 2"
+                src="https://www.google.com/maps?q=Avenida+Exemplo+456+Sao+Paulo&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </article>
+
       </div>
     </section>
 
@@ -92,20 +171,24 @@
       <h2>Fale com a gente</h2>
       <ul class="contatos">
         <li>
-          <span class="rotulo">WhatsApp</span>
-          <a href="https://wa.me/5511933243199" target="_blank" rel="noopener">(11) 93324-3199</a>
+          <span class="rotulo">WhatsApp — Loja 1</span>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener">(11) 99999-9999</a>
+        </li>
+        <li>
+          <span class="rotulo">WhatsApp — Loja 2</span>
+          <a href="https://wa.me/5511888888888" target="_blank" rel="noopener">(11) 88888-8888</a>
         </li>
         <li>
           <span class="rotulo">Telefone</span>
-          <a href="tel:+55114522-2800">(11) 4522-2800</a>
+          <a href="tel:+551133333333">(11) 3333-3333</a>
         </li>
         <li>
           <span class="rotulo">E-mail</span>
-          <a href="mailto:ineditus.film@terra.com.br">ineditus.film@terra.com.br</a>
+          <a href="mailto:contato@ineditus.com.br">contato@ineditus.com.br</a>
         </li>
         <li>
           <span class="rotulo">Instagram</span>
-          <a href="https://www.instagram.com/ineditus.film/" target="_blank" rel="noopener">@ineditus.film</a>
+          <a href="https://www.instagram.com/ineditus" target="_blank" rel="noopener">@ineditus</a>
         </li>
       </ul>
     </section>
